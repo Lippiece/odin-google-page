@@ -1,13 +1,25 @@
 h1 {
     color:rgb(58, 70, 240);
 }
-.s-header {
+.search {
     width: 300px;
     margin: auto;
     margin-top: 20%;
-    background-color: rgb(202, 202, 202);    
     display: grid;
+    grid-template-areas: 
+    "header header"
+    "input input"
+    "s-button s-lucky"
 }
-.s-box {
-    
+#s-input {
+    background-color: rgb(255, 255, 255);
+    grid-area: input;100px
+#s-button {
+    color: rgb(63, 67, 114);
+    grid-area: s-button;
+    margin-top: 2em;
+}
+#s-lucky {
+    grid-area: s-lucky;
+    margin-top: 2em;
 }
