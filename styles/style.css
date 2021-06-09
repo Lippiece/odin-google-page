@@ -1,15 +1,22 @@
 h1 {
     color:rgb(58, 70, 240);
 }
-.search {
+.topbar {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px 10px 10px 10px;
+}
+.searchbox {
     width: 300px;
     margin: auto;
-    margin-top: 20%;
     display: grid;
     grid-template-areas: 
     "header header"
     "input input"
-    "s-button s-lucky"
+    "s-button s-lucky";
+    grid-row-gap: 10px;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 50% 1fr;
 }
 #s-input {
     background-color: rgb(255, 255, 255);
