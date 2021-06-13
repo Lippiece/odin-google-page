@@ -45,3 +45,9 @@ a:hover {
     grid-area: s-lucky;
     margin-top: 2em;
 }
+.botbar {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-grow: 1;
+}
