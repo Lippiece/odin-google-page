@@ -1,6 +1,3 @@
-h1 {
-    color:rgb(58, 70, 240);
-}
 .topbar {
     display: flex;
     justify-content: flex-end;
@@ -45,9 +42,29 @@ a:hover {
     grid-area: s-lucky;
     margin-top: 2em;
 }
-.botbar {
+.your-language {
     display: flex;
-    align-items: flex-end;
     justify-content: center;
     flex-grow: 1;
+}
+.current-language {
+    position: fixed;
+    bottom: 0;
+}
+.botbar {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    justify-content: space-evenly;
+}
+#left {
+    display: flex;
+    position: relative;
+    left: 0;    
+}
+#right {
+    display: flex;
+    position: fixed;
+    right: 0;
+
 }
