@@ -1,3 +1,7 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
 .topbar {
     display: flex;
     justify-content: flex-end;    
@@ -61,17 +65,14 @@ a:hover {
 .your-language {
     display: flex;
     justify-content: center;
-    flex-grow: 1;
 }
 .current-language {
-    position: fixed;
-    bottom: 0;
+
 }
 .botbar {
     display: flex;
-    position: fixed;
-    bottom: 0;
     justify-content: space-evenly;
+    margin-bottom: 10px;
 }
 #left {
     display: flex;
