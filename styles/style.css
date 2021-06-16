@@ -1,6 +1,7 @@
 body {
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 .topbar {
     display: flex;
@@ -65,18 +66,16 @@ a:hover {
 .your-language {
     display: flex;
     justify-content: center;
-}
-.current-language {
-
+    flex-grow: 1;
 }
 .botbar {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     margin-bottom: 10px;
+    flex-shrink: 0;
 }
 #additional {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
