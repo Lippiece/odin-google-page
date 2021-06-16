@@ -71,17 +71,12 @@ a:hover {
 }
 .botbar {
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     margin-bottom: 10px;
 }
-#left {
+#additional {
     display: flex;
-    position: relative;
-    left: 0;    
-}
-#right {
-    display: flex;
-    position: fixed;
-    right: 0;
-
+    flex-direction: row;
+    justify-content: space-around;
 }
