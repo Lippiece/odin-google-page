@@ -2,6 +2,9 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
+    font-size: 14px;
+    font-family: arial,sans-serif;
+    color: #222;
 }
 .topbar {
     display: flex;
@@ -28,18 +31,28 @@ a:hover {
     width: 300px;
     margin: auto;
     padding: 1em;
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    /*display: grid;
     grid-template-areas: 
     "header header"
     "input input"
     "s-button s-lucky";
     grid-row-gap: 10px;
     grid-template-rows: auto auto auto;
-    grid-template-columns: 50% 1fr;
+    grid-template-columns: 50% 1fr;*/    
 }
+.inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+/*div.inputs input:hover {
+    border: 1rem solid;
+    outline: black;
+}*/
 #s-input {
     background-color: rgb(255, 255, 255);
-    grid-area: input;
     border: none;
     outline: none;
 }
@@ -50,18 +63,12 @@ a:hover {
     border:rgb(255, 255, 255);
 }
 #s-button:hover {
-    border: 1px solid rgb(196, 196, 196);
-    border-radius: 7px;
+    border: double black;
 }
 #s-lucky {
     grid-area: s-lucky;
     margin-top: 2em;
     border:rgb(255, 255, 255);
-
-}
-#s-lucky:hover {
-    border: 1px solid rgb(196, 196, 196);
-    border-radius: 7px;
 }
 .your-language {
     display: flex;
@@ -71,7 +78,7 @@ a:hover {
 .botbar {
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     flex-shrink: 0;
 }
 #additional {
