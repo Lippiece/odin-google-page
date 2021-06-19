@@ -28,19 +28,22 @@ a:hover {
     text-decoration: underline;
 }
 .searchbox {
-    width: 300px;
     margin: auto;
     padding: 1em;
     display: flex;
     flex-direction: column;
-    /*display: grid;
-    grid-template-areas: 
-    "header header"
-    "input input"
-    "s-button s-lucky";
-    grid-row-gap: 10px;
-    grid-template-rows: auto auto auto;
-    grid-template-columns: 50% 1fr;*/    
+}
+.inputbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: solid rgb(211, 211, 211) 1px;
+    border-radius: 1em;
+}
+#s-search {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    outline: none;
 }
 .inputs {
     display: flex;
@@ -67,14 +70,6 @@ div.inputs input:hover {
 div.inputs input:focus{
     border: 1px solid rgb(255, 102, 0);
 }
-#s-search {
-    background-color: rgb(255, 255, 255);
-    border: solid rgb(211, 211, 211) 1px;
-    border-radius: 1em;
-    min-block-size: 3em;
-    min-width: 80%;
-    outline: none;
-}
 .your-language {
     display: flex;
     justify-content: center;
@@ -84,7 +79,7 @@ div.inputs input:focus{
     display: flex;
     flex-direction: column;
     flex-shrink: 0;
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(240, 240, 240);
     padding-bottom: 1em;
 }
 p {
